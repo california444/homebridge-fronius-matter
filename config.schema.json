@@ -1,0 +1,27 @@
+{
+  "pluginAlias": "FroniusMatter",
+  "pluginType": "platform",
+  "singular": true,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "host": {
+        "title": "Fronius host",
+        "description": "IP address or host name of the inverter.",
+        "type": "string",
+        "required": true
+      },
+      "pollInterval": {
+        "title": "Poll interval (seconds)",
+        "type": "integer",
+        "default": 10,
+        "minimum": 5
+      },
+      "debug": {
+        "title": "Log every reading",
+        "type": "boolean",
+        "default": false
+      }
+    }
+  }
+}
